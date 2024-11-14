@@ -1,0 +1,5 @@
+<h1> Movie category <%= @list.name %> </h1>
+
+<%= link_to "Back to index", lists_path %>
+
+<%= link_to "Delete list", list_path(@list), data: { turbo_method: :delete, turbo_confirm: "Vous êtes sur ?" } %>

@@ -101,6 +101,8 @@ GEM
     drb (2.2.1)
     erubi (1.13.0)
     execjs (2.10.0)
+    faker (3.5.1)
+      i18n (>= 1.8.11, < 2)
     ffi (1.17.0-aarch64-linux-gnu)
     ffi (1.17.0-arm-linux-gnu)
     ffi (1.17.0-arm64-darwin)
@@ -113,6 +115,7 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
+    imgix (4.1.0)
     importmap-rails (2.0.3)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
@@ -282,7 +285,9 @@ DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2)
   debug
+  faker
   font-awesome-sass (~> 6.1)
+  imgix
   importmap-rails
   jbuilder
   pg (~> 1.1)
