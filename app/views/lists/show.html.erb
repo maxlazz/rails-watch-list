@@ -1,5 +1,12 @@
 <h1> Movie category <%= @list.name %> </h1>
 
-<%= link_to "Back to index", lists_path %>
+<% @list.movies.each do |movie|%>
+<img src=<%= movie.poster_url %>>
+<%= movie.title %>
 
+<% end %>
+
+
+<%= link_to "Back to index", lists_path %>
+<%= link_to "Add movie", new_list_bookmark_path(@list) %>
 <%= link_to "Delete list", list_path(@list), data: { turbo_method: :delete, turbo_confirm: "Vous êtes sur ?" } %>
